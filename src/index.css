@@ -1,0 +1,652 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.modal-lable {
+  width: 40px;
+  display: inline-block;
+}
+
+.table th, .table td {
+  vertical-align: baseline !important;
+  padding: 8px;
+  text-align: center;
+  width: auto;
+}
+
+td {
+  background: #f7f6f6;
+  border-color: #ced4da;
+  font-family: "Montserrat";
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+
+th {
+  text-align: center;
+  color: white;
+  font-family: "Montserrat";
+}
+
+.star {
+  color: red;
+}
+
+.text {
+  color: #000000;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: center;
+}
+
+.IncidentHeading {
+  display: flex;
+  width: 50% !important;
+}
+.IncidentHeading .form-group {
+  display: flex;
+  align-items: center;
+}
+.IncidentHeading .form-group .form-control {
+  width: 230px;
+  margin-left: 10px;
+}
+.IncidentHeading .form-group label {
+  margin: 0;
+}
+
+.MainForm {
+  width: 1200px;
+}
+
+form {
+  padding: 35px 0;
+  border: 1px solid #115272;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+}
+form .incident {
+  width: 480px;
+}
+form .section {
+  width: 180px;
+}
+form .series {
+  width: 175px;
+}
+form .policy {
+  width: 200px;
+  margin-left: -10px;
+}
+form .userDetails {
+  width: 90%;
+  margin: auto;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+}
+form .userDetails h1 {
+  font-size: 24px;
+  color: #115272;
+  font-weight: bolder;
+}
+form .userDetails .extra {
+  width: 55%;
+}
+form .userDetails .heading {
+  width: 300px;
+  display: flex !important;
+}
+form .userDetails .options {
+  color: black;
+  border: 1px solid #ced4da;
+  border-radius: 4px 4px 4px 4px;
+  font-family: "Helvetica";
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  width: 140px;
+  height: 38px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 20px;
+  padding: 2px 0;
+  background: none !important;
+}
+form .userDetails .options .form-control {
+  width: 170px;
+}
+form .userDetails .options .form-control span {
+  margin-left: 10px;
+}
+form .form-btns {
+  background-color: yellow;
+}
+form .InputField {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+form .InputField .selectInput {
+  width: 270px;
+}
+form .InputField .selectInput #input-group-dropdown-2 {
+  background: #115272;
+  color: white;
+  z-index: -1;
+}
+form #input-group-dropdown-2 {
+  background: #115272;
+  color: white;
+  z-index: -1;
+}
+form .fControl {
+  display: flex;
+  width: 100%;
+}
+form .fControl .form-group {
+  margin-right: 10px;
+  width: 60%;
+}
+form .fControl .InputField {
+  margin-left: 10px;
+}
+form .fControl .InputField .form-control {
+  width: 54%;
+}
+form #input-group-dropdown-2 {
+  background: #115272;
+  color: white;
+}
+form .calender-in {
+  background-color: yellow;
+  position: relative;
+}
+form .calender-in #svg {
+  position: absolute;
+  right: 0;
+  background: #115272;
+  color: white;
+  padding: 8px;
+  top: 0;
+  height: 100%;
+  width: 40px;
+}
+form .setInputs {
+  width: auto;
+}
+form .setInputs .form-group {
+  width: auto;
+  padding-right: 0;
+}
+form label {
+  font-weight: bold;
+}
+form .form-container {
+  width: 700px;
+  display: flex;
+  justify-content: space-around;
+}
+form .form-container .buttons {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+form .form-container .buttons .dropDown {
+  bottom: 0;
+}
+form .form-container .buttons button {
+  position: absolute;
+  right: 0;
+  background: #115272;
+  color: white;
+  border: 2px solid #115272;
+}
+form .form-container .buttons input, form .form-container .buttons select {
+  width: 100%;
+  outline: none;
+}
+form .form-container .buttons select {
+  padding: 3px;
+}
+form .search-button {
+  width: 300px;
+  height: 30px;
+  display: flex;
+  margin-top: 60px;
+}
+form .search-button button {
+  background: #115272;
+  border-radius: 5px;
+  border: none;
+  margin-right: 20px;
+  width: 125px;
+  color: white;
+}
+form .search-button button .search-icon {
+  margin-right: 4px;
+  font-size: 18px;
+}
+
+.DModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerModel {
+  background: white;
+  width: 597px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  outline: none;
+  margin: 250px auto;
+  padding: 30px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 7px;
+}
+.innerModel .warningMsg {
+  display: flex;
+  margin: 10px 16px;
+}
+.innerModel .warningMsg div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #e4e1e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.innerModel .warningMsg p {
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+.innerModel .warningMsg .deleteBtn {
+  font-size: 4rem;
+  border: none;
+  color: #D93939;
+}
+.innerModel .warningMsg .SaveBtn {
+  font-size: 3.6rem;
+  color: #115272;
+}
+.innerModel .confirmation-btns {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 320px;
+}
+.innerModel .confirmation-btns button {
+  margin: 0 10px;
+  margin-left: 35px;
+  border: none;
+  border-radius: 3px;
+  padding: 3px 12px;
+  color: white;
+  width: 115px;
+}
+.innerModel .confirmation-btns button .check {
+  margin-right: 8px;
+}
+.innerModel .confirmation-btns #yesBtn {
+  background: #115272;
+}
+.innerModel .confirmation-btns #noBtn {
+  background: #aaaaaa;
+  margin-left: 8px;
+}
+
+.ReactModalPortal {
+  background: #115272;
+}
+
+.TableModel h1 {
+  background: #115272;
+  color: white;
+}
+
+.TableContainer {
+  padding: 15px 20px;
+  width: 100%;
+}
+.TableContainer h3 {
+  color: #115272;
+  margin: 18px 0;
+}
+.TableContainer table {
+  width: 100%;
+  color: black;
+}
+.TableContainer table tr {
+  border: none;
+}
+.TableContainer table tr td, .TableContainer table tr th {
+  text-align: left;
+  border: none;
+  color: black;
+  width: auto;
+  background: none;
+  padding: 10px 0;
+}
+.TableContainer table tr td {
+  margin: 0 17px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0 10px;
+}
+.TableContainer .SecondTable {
+  margin: 20px 0;
+}
+.TableContainer .SecondTable tr td, .TableContainer .SecondTable tr th {
+  width: 120px;
+  margin: auto;
+}
+
+.SaveCloseBtns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 47%;
+  margin: 22px auto;
+}
+.SaveCloseBtns button {
+  width: 120px;
+  padding: 2px 10px;
+  color: white;
+  border: none;
+}
+.SaveCloseBtns #CloseBtn {
+  background: #868E96;
+}
+.SaveCloseBtns #SaveBtn {
+  background: #115272;
+}
+
+.headings {
+  text-align: center;
+  background: #115272;
+}
+.headings th {
+  border-right: 1px solid #dddddd;
+}
+
+.ThirdTable {
+  background: #F7F6F6;
+  width: 99% !important;
+}
+.ThirdTable .headings {
+  width: 100%;
+  background: #115272;
+  text-align: center;
+}
+.ThirdTable .headings th {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.ThirdTable .outerTable td {
+  width: 60px;
+  margin: 0 !important;
+  border: 1px solid #CED4DA;
+}
+.ThirdTable tr th {
+  width: auto;
+  background: green;
+}
+
+.SuccessMsg {
+  position: absolute;
+  top: 4rem;
+  right: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  padding: 20px;
+  background: #ffffff;
+  opacity: 97%;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  background: #ffffff;
+  border-color: #ced4da;
+}
+.SuccessMsg .CheckMark {
+  box-sizing: border-box;
+  background: #115272;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.SuccessMsg p {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.form-footer {
+  background: none;
+}
+.form-footer .extra-information {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  margin: 30px auto;
+}
+.form-footer .extra-information .positionClass {
+  margin: 0 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.form-footer .extra-information .positionClass h2 {
+  font-size: 20px;
+}
+.form-footer .extra-information .positionClass h2 span {
+  font-size: 16px;
+}
+
+.bgGray {
+  background: #868E96;
+}
+
+.FormButtons {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FormButtons button {
+  border: 1px solid #ced4da;
+  border-radius: 3px;
+  margin: 4px 10px;
+  color: #fff;
+  width: 156px;
+  background: #115272;
+  padding: 4px 10px;
+}
+.FormButtons button svg {
+  margin: 0 8px;
+  margin-bottom: 4px;
+}
+
+.FormClass {
+  display: flex;
+  flex-direction: column;
+}
+
+.AdjudicatedTable {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.AdjudicatedTable div {
+  margin: 17px;
+}
+.AdjudicatedTable div button {
+  border: 1px solid #ced4da;
+  border-radius: 3px;
+  margin: 4px 10px;
+  color: #fff;
+  width: 121px;
+  background: #115272;
+  padding: 4px 10px;
+}
+.AdjudicatedTable div button svg {
+  margin-bottom: 3px;
+  margin-right: 4px;
+}
+.AdjudicatedTable input {
+  margin-left: 190px;
+  width: 280px;
+}
+.AdjudicatedTable label {
+  position: absolute;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+button {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+#trash-color {
+  color: #D93939;
+  box-shadow: none;
+  font-size: 1.2rem;
+}
+
+#pencil-color {
+  color: #1464F6;
+  box-shadow: none;
+  font-size: 1.2rem;
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #115272;
+  width: 100%;
+  flex-direction: row;
+  color: white;
+}
+.inner .main ul {
+  position: fixed;
+  background: #115272;
+  left: -30px;
+  top: 70px;
+  width: 300px;
+  height: 100%;
+}
+.inner .main ul li {
+  list-style: none;
+  margin: 20px 0;
+  border-bottom: 1px solid white;
+  padding: 10px 0;
+}
+.inner .main ul li a {
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.inner span {
+  background-color: #D93939;
+  padding: 0.2rem 0.6rem;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.inner span .bars {
+  font-size: 2.2rem;
+}
+.inner span h2 {
+  font-size: 1.4rem !important;
+}
+.inner h1 {
+  margin-left: 22px;
+}
+
+.tableT {
+  width: 1200px !important;
+  margin: auto;
+  font-family: "Montserrat";
+}
+.tableT .innerTable {
+  width: 100%;
+  overflow: hidden;
+}
+
+.outerTable {
+  justify-content: center;
+  align-items: center;
+}
+.outerTable td {
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #115272;
+  padding: 6px;
+}
+.pagination button {
+  border: none;
+  border-radius: 4px;
+  width: 140px;
+  margin-left: 5px;
+}
+.pagination ul {
+  width: 90%;
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.pagination ul .navigator a {
+  color: black;
+  background: white;
+}
+.pagination ul li {
+  color: white;
+  margin: 4px 8px;
+}
+.pagination ul li #paginateCounter {
+  margin: 10px;
+  background: #FFFFFF;
+  color: black;
+  padding: 5px 11px;
+}
+.pagination ul li a {
+  padding: 5px 11px;
+  border-radius: 5px;
+}
+
+table {
+  font-size: 16px;
+}/*# sourceMappingURL=index.css.map */

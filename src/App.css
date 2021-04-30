@@ -1,0 +1,860 @@
+* {
+  box-sizing: border-box;
+}
+
+.modal-lable {
+  width: 40px;
+  display: inline-block;
+}
+
+.table th,
+.table td {
+  vertical-align: baseline !important;
+  padding: 8px;
+  text-align: center;
+  width: auto;
+}
+
+td {
+  background: #f7f6f6;
+  border-color: #ced4da;
+  font-family: "Montserrat";
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+
+th {
+  text-align: center;
+  color: white;
+  font-family: "Montserrat";
+}
+
+.star {
+  color: red;
+}
+
+.text {
+  color: #000000;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: center;
+}
+
+.IncidentHeading {
+  display: flex;
+  width: 50% !important;
+}
+.IncidentHeading .form-group {
+  display: flex;
+  align-items: center;
+}
+.IncidentHeading .form-group .form-control {
+  width: 230px;
+  margin-left: 10px;
+}
+.IncidentHeading .form-group label {
+  margin: 0;
+}
+
+.MainForm {
+  width: 1200px;
+}
+
+form {
+  padding: 35px 0;
+  border: 1px solid #115272;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+}
+form .incident {
+  width: 480px;
+}
+form .section {
+  width: 180px;
+}
+form .series {
+  width: 175px;
+}
+form .policy {
+  width: 200px;
+  margin-left: -10px;
+}
+form .userDetails {
+  width: 90%;
+  margin: auto;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+}
+form .userDetails h1 {
+  font-size: 24px;
+  color: #115272;
+  font-weight: bolder;
+}
+form .userDetails .extra {
+  width: 55%;
+}
+form .userDetails .heading {
+  width: 300px;
+  display: flex !important;
+}
+form .userDetails .options {
+  color: black;
+  border: 1px solid #ced4da;
+  border-radius: 4px 4px 4px 4px;
+  font-family: "Helvetica";
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  width: 140px;
+  height: 38px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 20px;
+  padding: 2px 0;
+  background: none !important;
+}
+form .userDetails .options .form-control {
+  width: 170px;
+}
+form .userDetails .options .form-control span {
+  margin-left: 10px;
+}
+form .form-btns {
+  background-color: yellow;
+}
+form .InputField {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+form .InputField .selectInput {
+  width: 270px;
+}
+form .InputField .selectInput #input-group-dropdown-2 {
+  background: #115272;
+  color: white;
+  z-index: -1;
+}
+form #input-group-dropdown-2 {
+  background: #115272;
+  color: white;
+  z-index: -1;
+}
+form .fControl {
+  display: flex;
+  width: 100%;
+}
+form .fControl .form-group {
+  margin-right: 10px;
+  width: 60%;
+}
+form .fControl .InputField {
+  margin-left: 10px;
+}
+form .fControl .InputField .form-control {
+  width: 54%;
+}
+form #input-group-dropdown-2 {
+  background: #115272;
+  color: white;
+}
+form .calender-in {
+  background-color: yellow;
+  position: relative;
+}
+form .calender-in #svg {
+  position: absolute;
+  right: 0;
+  background: #115272;
+  color: white;
+  padding: 8px;
+  top: 0;
+  height: 100%;
+  width: 40px;
+}
+form .setInputs {
+  width: auto;
+}
+form .setInputs .form-group {
+  width: auto;
+  padding-right: 0;
+}
+form label {
+  font-weight: bold;
+}
+form .form-container {
+  width: 700px;
+  display: flex;
+  justify-content: space-around;
+}
+form .form-container .buttons {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+form .form-container .buttons .dropDown {
+  bottom: 0;
+}
+form .form-container .buttons button {
+  position: absolute;
+  right: 0;
+  background: #115272;
+  color: white;
+  border: 2px solid #115272;
+}
+form .form-container .buttons input,
+form .form-container .buttons select {
+  width: 100%;
+  outline: none;
+}
+form .form-container .buttons select {
+  padding: 3px;
+}
+form .search-button {
+  width: 300px;
+  height: 30px;
+  display: flex;
+  margin-top: 60px;
+}
+form .search-button button {
+  background: #115272;
+  border-radius: 5px;
+  border: none;
+  margin-right: 20px;
+  width: 125px;
+  color: white;
+}
+form .search-button button .search-icon {
+  margin-right: 4px;
+  font-size: 18px;
+}
+
+.DModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerModel {
+  background: white;
+  width: 597px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  outline: none;
+  margin: 250px auto;
+  padding: 30px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 7px;
+}
+.innerModel .warningMsg {
+  display: flex;
+  margin: 10px 16px;
+}
+.innerModel .warningMsg div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #e4e1e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.innerModel .warningMsg p {
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+.innerModel .warningMsg .deleteBtn {
+  font-size: 4rem;
+  border: none;
+  color: #d93939;
+}
+.innerModel .warningMsg .SaveBtn {
+  font-size: 3.6rem;
+  color: #115272;
+}
+.innerModel .confirmation-btns {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 320px;
+}
+.innerModel .confirmation-btns button {
+  margin: 0 10px;
+  margin-left: 35px;
+  border: none;
+  border-radius: 3px;
+  padding: 3px 12px;
+  color: white;
+  width: 115px;
+}
+.innerModel .confirmation-btns button .check {
+  margin-right: 8px;
+}
+.innerModel .confirmation-btns #yesBtn {
+  background: #115272;
+}
+.innerModel .confirmation-btns #noBtn {
+  background: #aaaaaa;
+  margin-left: 8px;
+}
+
+.ReactModalPortal {
+  background: #115272;
+}
+
+.TableModel h1 {
+  background: #115272;
+  color: white;
+}
+
+.TableContainer {
+  padding: 15px 20px;
+  width: 100%;
+}
+.TableContainer h3 {
+  color: #115272;
+  margin: 18px 0;
+}
+.TableContainer table {
+  width: 100%;
+  color: black;
+}
+.TableContainer table tr {
+  border: none;
+}
+.TableContainer table tr td,
+.TableContainer table tr th {
+  text-align: left;
+  border: none;
+  color: black;
+  width: auto;
+  background: none;
+  padding: 10px 0;
+}
+.TableContainer table tr td {
+  margin: 0 17px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0 10px;
+}
+.TableContainer .SecondTable {
+  margin: 20px 0;
+}
+.TableContainer .SecondTable tr td,
+.TableContainer .SecondTable tr th {
+  width: 120px;
+  margin: auto;
+}
+
+.SaveCloseBtns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 47%;
+  margin: 22px auto;
+}
+.SaveCloseBtns button {
+  width: 120px;
+  padding: 2px 10px;
+  color: white;
+  border: none;
+}
+.SaveCloseBtns #CloseBtn {
+  background: #868e96;
+}
+.SaveCloseBtns #SaveBtn {
+  background: #115272;
+}
+
+.headings {
+  text-align: center;
+  background: #115272;
+}
+.headings th {
+  border-right: 1px solid #dddddd;
+}
+
+.ThirdTable {
+  background: #f7f6f6;
+  width: 99% !important;
+}
+.ThirdTable .headings {
+  width: 100%;
+  background: #115272;
+  text-align: center;
+}
+.ThirdTable .headings th {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.ThirdTable .outerTable td {
+  width: 60px;
+  margin: 0 !important;
+  border: 1px solid #ced4da;
+}
+.ThirdTable tr th {
+  width: auto;
+  background: green;
+}
+
+.SuccessMsg {
+  position: absolute;
+  top: 4rem;
+  right: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  padding: 20px;
+  background: #ffffff;
+  opacity: 97%;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  background: #ffffff;
+  border-color: #ced4da;
+}
+.SuccessMsg .CheckMark {
+  box-sizing: border-box;
+  background: #115272;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.SuccessMsg p {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.form-footer {
+  background: none;
+}
+.form-footer .extra-information {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  margin: 30px auto;
+}
+.form-footer .extra-information .positionClass {
+  margin: 0 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.form-footer .extra-information .positionClass h2 {
+  font-size: 20px;
+}
+.form-footer .extra-information .positionClass h2 span {
+  font-size: 16px;
+}
+
+.bgGray {
+  background: #868e96;
+}
+
+.FormButtons {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FormButtons button {
+  border: 1px solid #ced4da;
+  border-radius: 3px;
+  margin: 4px 10px;
+  color: #fff;
+  width: 156px;
+  background: #115272;
+  padding: 4px 10px;
+}
+.FormButtons button svg {
+  margin: 0 8px;
+  margin-bottom: 4px;
+}
+
+.FormClass {
+  display: flex;
+  flex-direction: column;
+}
+
+.AdjudicatedTable {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.AdjudicatedTable div {
+  margin: 17px;
+}
+.AdjudicatedTable div button {
+  border: 1px solid #ced4da;
+  border-radius: 3px;
+  margin: 4px 10px;
+  color: #fff;
+  width: 121px;
+  background: #115272;
+  padding: 4px 10px;
+}
+.AdjudicatedTable div button svg {
+  margin-bottom: 3px;
+  margin-right: 4px;
+}
+.AdjudicatedTable input {
+  margin-left: 190px;
+  width: 280px;
+}
+.AdjudicatedTable label {
+  position: absolute;
+}
+
+.top-proof {
+  height: 117px;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 8px 8px 8px;
+  background: #ffffff;
+  border-color: #115272;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px 10px 10px 10px;
+}
+.top-proof .proof-input {
+  width: 226px;
+  height: 38px;
+  padding: 4px 8px 4px 8px;
+  color: "black";
+  background: #ffffff;
+  color: #aaaaaa;
+  border-color: #ced4da;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px 4px 4px 4px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+}
+.top-proof .proof-lable {
+  color: #212529;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+}
+.top-proof .proof-btn {
+  margin-top: 1.9rem;
+  margin-left: 1rem;
+  justify-self: center;
+  justify-content: center;
+  width: 121px;
+  height: 38px;
+  padding: 0px 10px 0px 10px;
+  background: #105272;
+  color: #ffffff;
+  border-color: #ced4da;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px 4px 4px 4px;
+  font-family: "Quicksand";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+.proof-inner {
+  width: 1030px;
+  height: 745px;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  padding: 8px 8px 8px 8px;
+  background: #ffffff;
+  border-color: #115272;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px 10px 10px 10px;
+}
+.proof-inner .proof-lable {
+  color: #212529;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+}
+.proof-inner .Proof-tbl-label {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  color: #105272;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 24px;
+  text-align: left;
+}
+
+.proof-lower {
+  color: #212529;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.proof-lower2 {
+  color: #212529;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: left;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+
+.proof-side {
+  padding: 8px 8px 8px 8px;
+  background: #ffffff;
+  border-color: #115272;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.proof-input {
+  width: 200px;
+  height: 38px;
+  padding: 4px 8px 4px 8px;
+  background: #ffffff;
+  color: #aaaaaa;
+  border-color: #ced4da;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px 4px 4px 4px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+}
+
+.proof-lable {
+  color: #212529;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 15px;
+  text-align: left;
+}
+
+.side-blue {
+  width: 148px;
+  height: 38px;
+  margin-top: 2rem;
+  padding: 0px 10px 0px 10px;
+  background: #105272;
+  color: #ffffff;
+  border-color: #ced4da;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px 4px 4px 4px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+.side-grey {
+  width: 148px;
+  height: 38px;
+  margin-top: 2rem;
+  padding: 0px 10px 0px 10px;
+  background: #868e96;
+  color: #ffffff;
+  border-color: #ced4da;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px 3px 3px 3px;
+  font-family: "Quicksand";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+.ticket-ass-inpute {
+  width: 155px;
+  height: 38px;
+  padding: 4px 8px 4px 8px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  color: #aaaaaa;
+  border-color: #ced4da;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.ticket-ass-label {
+  color: #212529;
+  font-family: "Montserrat";
+  font-weight: bold;
+  margin-top: 1.5rem;
+  font-size: 15px;
+  text-align: left;
+}
+
+.grid-ass {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bg-blue {
+  display: grid;
+  grid-template-columns: 2fr;
+  height: 55px;
+  color: "white";
+  padding: 8px 8px 8px 8px;
+  background: #105272;
+  border-color: #115272;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.ticket-ass-label-white {
+  color: white;
+  font-family: "Montserrat";
+  font-weight: bold;
+  margin-top: 1.5rem;
+  font-size: 15px;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.paid-ticket {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 4.7rem;
+  width: 89%;
+  height: 206px;
+  padding: 8px 8px 8px 8px;
+  background: #ffffff;
+  border-color: #115272;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px 10px 10px 10px;
+}
+.paid-ticket label {
+  width: 155px;
+  height: 22px;
+  color: #212529;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+}
+.paid-ticket input {
+  width: 200px;
+  height: 38px;
+  padding: 4px 8px 4px 8px;
+  color: #000000;
+  border-color: #ced4da;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px 4px 4px 4px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+}
+.paid-ticket .ticket-btn {
+  margin-top: 1.8rem;
+  margin-left: 2rem;
+  justify-self: center;
+  justify-content: center;
+  width: 121px;
+  height: 38px;
+  padding: 0px 10px 0px 10px;
+  background: #105272;
+  color: #ffffff;
+  border-color: #ced4da;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px 4px 4px 4px;
+  font-family: "Quicksand";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+.ModalHeading {
+  background: #115272;
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+
+.bgGray {
+  background: #868e96;
+}
+
+.AdjudicatedTable {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px 20px;
+}
+.AdjudicatedTable .color {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.AdjudicatedTable div {
+  margin: 17px;
+}
+.AdjudicatedTable div button {
+  border: 1px solid #ced4da;
+  border-radius: 3px;
+  margin: 4px 10px;
+  color: #fff;
+  width: 121px;
+  background: #115272;
+  padding: 4px 10px;
+}
+.AdjudicatedTable div button svg {
+  margin-bottom: 3px;
+  margin-right: 4px;
+}
+.AdjudicatedTable input {
+  margin-left: 190px;
+  width: 280px;
+  border: 1px solid #ced4da;
+  padding: 3px;
+  border-radius: 4px;
+}
+.AdjudicatedTable label {
+  position: absolute;
+}
+
+button,
+input {
+  outline: none;
+}/*# sourceMappingURL=App.css.map */

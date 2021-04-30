@@ -1,0 +1,174 @@
+@import "App";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+// ------Variables------------
+$h-color: #115272;
+$d-color: #D93939;
+$p-color: #1464F6;
+
+button{
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+#trash-color{
+  color: $d-color;
+  -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+  font-size: 1.2rem;
+}
+#pencil-color{
+  color: $p-color;
+  -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+  font-size: 1.2rem;
+  // background-color: red;
+
+}
+
+
+// ------Mixin-----------
+
+@mixin toCenter{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+@mixin toAlign{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+// ----Header Styles-------
+
+ .inner{
+      position: relative;
+      display: flex;
+      align-items: center;
+      background: $h-color;
+      width: 100%;
+      flex-direction: row;
+      color: white;
+   .main{
+    ul{
+      // background: white;
+      position: fixed;
+      background: $h-color;
+      left: -30px;
+      top: 70px;
+      width: 300px;
+      height: 100%;
+      li{
+        list-style: none;
+        margin: 20px 0;
+        border-bottom: 1px solid white;
+        padding: 10px 0;
+        a{
+          color: white;
+          font-size: 20px;
+          font-weight: bolder;
+
+        }
+      }
+    }
+   }
+      span{
+        background-color: $d-color;
+        padding: .2rem .6rem ;
+        @include toCenter();
+        flex-direction: column;
+        .bars{
+          font-size: 2.2rem;
+        }
+        h2{
+          font-size: 1.4rem !important;
+        }
+        
+      }
+      h1{
+        margin-left: 22px;
+      }
+    
+      
+    }
+   
+
+  
+  
+  
+// --------Menu-------
+
+.tableT{
+  width: 1200px !important;
+  margin: auto;
+  font-family: "Montserrat";
+
+  .innerTable{
+    width: 100%;
+    overflow: hidden;
+   
+  }
+}
+.outerTable{
+  justify-content: center;
+  align-items: center;
+  td{
+    justify-content: center;
+    align-items: center;
+  }
+}
+.pagination{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: $h-color;
+  padding: 6px;
+  button{
+    border: none;
+    border-radius: 4px;
+    width: 140px;
+    margin-left:5px ;
+  }
+  ul{
+   width: 90%;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+    .navigator{
+      a{
+        color: black;
+        background: white;
+       
+      }
+    }
+    li{
+      color: white;
+      margin: 4px 8px;
+      #paginateCounter{
+        margin:  10px;
+        background: #FFFFFF;
+        color: black;
+        padding: 5px 11px;
+
+      }
+      a{
+        padding: 5px 11px;
+        border-radius: 5px;
+        }
+      
+    }
+  }
+}
+
+
+table{
+  font-size: 16px;
+}
